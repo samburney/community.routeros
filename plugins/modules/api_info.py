@@ -174,7 +174,11 @@ options:
         - ipv6 route
         - ipv6 settings
         - mpls
+        - mpls interface
         - mpls ldp
+        - mpls ldp accept filter
+        - mpls ldp advertise filter
+        - mpls ldp interface
         - port firmware
         - port remote-access
         - ppp aaa
@@ -182,6 +186,7 @@ options:
         - queue interface
         - queue simple
         - queue tree
+        - queue type
         - radius
         - radius incoming
         - routing bgp connection
