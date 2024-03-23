@@ -1497,6 +1497,27 @@ PATHS = {
             },
         ),
     ),
+    ('interface', 'pppoe-server', 'server'): APIData(
+        unversioned=VersionedAPIData(
+            fully_understood=True,
+            fields={
+                'accept-empty-service': KeyInfo(default=True),
+                'authentication': KeyInfo(default='pap,chap,mschap1,mschap2'),
+                'comment': KeyInfo(can_disable=True, remove_value=''),
+                'default-profile': KeyInfo(default='default'),
+                'disabled': KeyInfo(default=False),
+                'interface': KeyInfo(required=True),
+                'keepalive-timeout': KeyInfo(default=10),
+                'max-mru': KeyInfo(default='auto'),
+                'max-mtu': KeyInfo(default='auto'),
+                'max-sessions': KeyInfo(default='unlimited'),
+                'mrru': KeyInfo(default='disabled'),
+                'one-session-per-host': KeyInfo(can_disable=True, remove_value=False),
+                'pado-delay': KeyInfo(),
+                'service-name': KeyInfo(),
+            },
+        ),
+    ),
     ('interface', 'pptp-server', 'server'): APIData(
         unversioned=VersionedAPIData(
             single_value=True,
