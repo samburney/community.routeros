@@ -181,6 +181,7 @@ options:
         - ppp aaa
         - ppp profile
         - queue interface
+        - queue simple
         - queue tree
         - queue type
         - radius
